@@ -15,6 +15,26 @@ const questions = [
         message: 'Provide a short description explaining the what, why, and how of your project:'
     },
     {
+        type: 'input',
+        name: 'installation',
+        message: 'Provide the installation instructions:'
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Provide the usage information:'
+    },
+    {
+        type: 'input',
+        name: 'contributing',
+        message: 'Provide the contribution guidelines:'
+    },
+    {
+        type: 'input',
+        name: 'tests',
+        message: 'Provide the test instructions:'
+    },
+    {
         type: 'list',
         name: 'license',
         message: 'Choose a license for your project:',
@@ -29,8 +49,17 @@ const questions = [
             { name: 'Eclipse Public License 2.0', value: 'EPL-2.0' },
             { name: 'SIL Open Font License 1.1', value: 'OFL-1.1' },
             { name: 'Boost Software License 1.0', value: 'BSL-1.0' }
-            // Add more license options here
         ]
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'Enter your GitHub username:'
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Enter your email address:'
     }
 ];
 
