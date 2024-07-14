@@ -1,29 +1,39 @@
+// Function to return a license badge based on the license type passed in
+// If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license) {
+    // Return markdown for license badge
     return `[![License: ${license}](https://img.shields.io/badge/License-${license}-brightgreen.svg)](https://opensource.org/licenses/${license})`;
   } else {
-    return '';
+    return ''; // Return empty string if no license
   }
 }
 
+// Function to return the license link based on the license type passed in
+// If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license) {
+    // Return URL to the license
     return `(https://opensource.org/licenses/${license})`;
   } else {
-    return '';
+    return ''; // Return empty string if no license
   }
 }
 
+// Function to return the license section of README
+// If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license) {
+    // Return markdown for license section
     return `## License
 
 This project is licensed under the ${license} license. Click [here]${renderLicenseLink(license)} for more details.`;
   } else {
-    return '';
+    return ''; // Return empty string if no license
   }
 }
 
+// Function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 
@@ -66,4 +76,4 @@ ${renderLicenseSection(data.license)}
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = generateMarkdown; // Export the generateMarkdown function

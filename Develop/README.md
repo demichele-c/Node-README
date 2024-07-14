@@ -1,6 +1,6 @@
 # test
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
+
 
 ## Description
 
@@ -21,20 +21,18 @@ test
 
 ## Usage
 
-test
+ds
 
 ## Contributing
 
-test
+sd
 
 ## Tests
 
-test
+dsd
 
 ## Questions
 
-If you have any questions, please feel free to contact me at [demichele.charles@yahoo.com](mailto:demichele.charles@yahoo.com). You can also find more of my work at [demichele-c](https://github.com/demichele-c).
+If you have any questions, please feel free to contact me at [sdds](mailto:sdds). You can also find more of my work at [dhhsihdi](https://github.com/dhhsihdi).
 
-## License
 
-This project is licensed under the MIT license. Click [here](https://opensource.org/licenses/MIT) for more details.
