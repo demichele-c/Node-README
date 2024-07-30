@@ -1,6 +1,6 @@
 const inquirer = require('inquirer'); // Import inquirer module for command line prompts
 const fs = require('fs'); // Import fs (file system) module for file operations
-const generateMarkdown = require('./generateMarkdown'); // Import generateMarkdown module from the same directory
+const generateMarkdown = require('./utils/generateMarkdown'); // Import generateMarkdown module from the same directory
 
 // Array of questions for user input
 const questions = [
@@ -66,17 +66,24 @@ const questions = [
 
 // Function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) =>
-        err ? console.error(err) : console.log('README.md file generated successfully!') // Log success message or error
+    const timestamp = new Date().toISOString().replace(/:/g, '-'); // Generate a timestamp
+    const newFileName = fileName.replace('.md', `-${timestamp}.md`); // Append the timestamp to the filename
+
+    fs.writeFile(newFileName, data, (err) =>
+        err ? console.error(err) : console.log(`${newFileName} file generated successfully!`) // Log success message or error
     );
 }
 
 // Function to initialize application
 function init() {
     inquirer.prompt(questions) // Prompt the user with the questions array
-        .then((answers) => {
+        .then(function(answers) {
+            console.log("Answers Object: ", answers);
             const markdownContent = generateMarkdown(answers); // Generate markdown content with user answers
             writeToFile('README.md', markdownContent); // Write the markdown content to README.md file
+        })
+        .catch(error => {
+            console.log(error);
         });
 }
 

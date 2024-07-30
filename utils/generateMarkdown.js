@@ -77,3 +77,10 @@ ${renderLicenseSection(data.license)}
 }
 
 module.exports = generateMarkdown; // Export the generateMarkdown function
+
+/*
+module.exports = { 
+  renderLicenseBadge,
+  generateMarkdown
+}
+  */
