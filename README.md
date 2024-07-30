@@ -8,7 +8,7 @@ This project is a command-line application built with Node.js and Inquirer.js. I
 
 ## Video Demo
 
-Watch a demo of the project [here](https://drive.google.com/file/d/1RPBmjB-9iZ17l_-ZoSgZm60qonIw-8Gu/view)
+Watch a demo of the project [here](https://drive.google.com/file/d/1EdQ6MMzkKQroHF2xnzGsHBLJRAMRDfxA/view)
 
 ## Table of Contents
 
